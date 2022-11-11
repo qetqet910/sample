@@ -1,0 +1,195 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow: hidden;
+}
+
+.toolbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 4vw;
+  background-color: #333;
+}
+.toolbar .innerToolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.toolbar .innerToolbar .return span i {
+  color: #fff;
+  font-size: 2vw;
+  cursor: pointer;
+}
+.toolbar .innerToolbar .title {
+  font-size: 2vw;
+  color: #fff;
+}
+.toolbar .innerToolbar .option span i {
+  color: #fff;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.config {
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: -10;
+}
+.config::after {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.7294117647);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+.config .innerConfig {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  left: 0px;
+  top: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  border-top-right-radius: 4%;
+  border-top-left-radius: 4%;
+  padding: 2% 4%;
+  z-index: 999;
+}
+.config .innerConfig .top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
+.config .innerConfig .top i {
+  font-size: 4rem;
+  cursor: pointer;
+}
+.config .innerConfig .top h6 {
+  font-size: 3rem;
+  margin-left: 5rem;
+  margin-bottom: 0.2rem;
+}
+.config .innerConfig .middle {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.config .innerConfig .middle ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 1%;
+  padding-top: 2rem;
+  padding-right: 1%;
+  margin-top: 3rem;
+  transition: all 0.5s;
+}
+.config .innerConfig .middle ul::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+}
+.config .innerConfig .middle ul li {
+  position: relative;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  padding: 2.6rem;
+  margin: 0.4rem;
+  font-size: 2rem;
+  border-radius: 17px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.config .innerConfig .middle ul li i {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.config .innerConfig .middle ul li:hover {
+  background-color: #555;
+}
+.config .innerConfig .middle .mapping {
+  position: absolute;
+  left: 120%;
+  top: 0px;
+  transition: all 0.5s;
+}
+.config .innerConfig .middle .mapping li:hover {
+  background-color: #333;
+}
+.config .innerConfig .middle .mapping .op1 {
+  position: relative;
+}
+.config .innerConfig .middle .mapping .op1 div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 60rem;
+  width: 100%;
+  margin: 10px;
+}
+.config .innerConfig .middle .mapping .op1 div input {
+  padding: 1rem 3rem 1rem 1.5rem;
+  min-width: 46rem;
+  outline: none;
+  background-color: #555;
+  border-radius: 17px;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+}
+.config .innerConfig .middle .mapping .op1 .submit {
+  position: absolute;
+  left: 23px;
+  bottom: -30%;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: #333;
+  border: none;
+  border-radius: 17px;
+  box-shadow: 1px 1px 3px #555;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
